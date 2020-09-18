@@ -1,0 +1,48 @@
+.container{
+    border-radius: 5%;
+    width: 6em;
+    height: 3em;
+    background: gray;
+    position: relative;
+    display: flex;
+    
+    padding: 5px;    
+    margin: auto;
+}
+.top-container{
+    background: gray;
+    width: 2em;
+    height: 2em;
+    position: relative;
+    align-self: center;
+    left: 6.2em;
+
+}
+.box1{
+    animation: move1 ease 3s infinite;   
+}
+.box2{
+    animation: move2 ease 3s infinite;
+}
+.box3{    
+    animation: move3 ease 3s infinite;
+}
+.box1,.box2,.box3{
+    border-radius: 10%;
+    width: 6em;
+    height: 3em;
+    margin-right: 3px;
+    right: 5px;
+    background:yellowgreen;
+    position: relative;
+}
+
+@keyframes move1{
+    0%,25% {opacity: 0; background-color: red;}    
+}
+@keyframes move2{
+    0%,50% {opacity: 0;}    
+}
+@keyframes move3{
+    0%,75% {opacity: 0;}      
+}
